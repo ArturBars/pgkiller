@@ -25,7 +25,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger()
 
-apps = {
+APPS = {
     "app-name": {
         "host": "localhost",
         "database": "public",
@@ -35,4 +35,8 @@ apps = {
     }
 }
 
-limit_connections = 15
+LIMIT_CONNECTIONS = 15
+
+DELAY = 30  # seconds
+
+CONNECTION_ATTEMPTS = 5
